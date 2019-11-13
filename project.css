@@ -1,0 +1,58 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+body{
+    background-image: url(../img/bu/bk4.jpg);
+    background-size: cover;
+}
+.head{
+    height: 70px ;
+    width: 95%;
+    /*border-bottom: 2px solid red;*/
+    margin: 30px auto 0px;
+
+}
+.bt{
+    /*border: 1px solid red;*/
+    margin-left: 100px;
+    height: 66px ;
+    width: 180px;
+    float: left;
+
+}
+.yi{
+    float: right;
+}
+.yi ul li{
+    float: left;
+    margin-right: 150px;
+    margin-top: 30px;
+    list-style-type: none;
+    font-family:黑体 ;
+    text-align: center;
+
+}
+.topic{
+    float: left;
+    height: 40px;
+    width: 90%;
+    /*border: 2px solid red;*/
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 70px;
+}
+/*.main{*/
+    /*margin-top: 30px;*/
+    /*margin-left: 65px;*/
+
+/*}*/
+#display{
+    float: left;
+    height: 500px;
+    width: 90%;
+    border: 2px solid red;
+    margin-top: 30px;
+    margin-left: 70px;
+}

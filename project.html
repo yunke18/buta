@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>项目报告</title>
+    <link href="../css/project.css" rel="stylesheet">
+    <script src="../js/play.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="head">
+    <div class="bt"><img src="../img/bu/logo.png"></div>
+    <div class="yi">
+        <ul>
+            <li>项目报告:</li>
+        </ul>
+    </div>
+
+</div>
+<div class="topic">
+    <h2>安卓游戏市场热点监测和分析</h2>
+</div>
+<div class="main">
+    <!--<textarea autofocus rows="40" cols="160px" name="display" class="duo">-->
+
+    <!--</textarea>-->
+    <div id="display">
+        <?php
+            include "conn.php";//这是链接数据的。
+            $result = mysql_query("SELECT * FROM online where class =1 ");
+            $dataarr = array();
+            while($row = mysql_fetch_array($result)){
+            array_push($dataarr, $row);
+         }
+        mysql_close($con);
+        echo json_encode($dataarr);
+?>
+
+    </div>
+</div>
+</body>
+</html>
